@@ -138,3 +138,66 @@ search.addEventListener("input", (e) => {
     })
 })
 
+
+// const addToShortList = (button) => {
+//     const card = button.closest('.card');
+
+
+//     const count = card.querySelector('.count').textContent;
+//     const role = card.querySelector('.role').textContent;
+//     const name = card.querySelector('.name').textContent;
+//     const imgUrl = card.querySelector('.gender-img').getAttribute('src');
+//     const location = card.querySelector('.location').textContent;
+
+//     const newData = localStorage.getItem('selectedData');
+//     if (newData) {
+//         localStorage.setItem('selectedData', [...newData, {
+//             count,
+//             role,
+//             name,
+//             imgUrl,
+//             location,
+//         }]);
+//     } else {
+//         localStorage.setItem('selectedData', [{
+//             count,
+//             role,
+//             name,
+//             imgUrl,
+//             location,
+//         }]);
+//     }
+// }
+
+// console.log(localStorage.getItem('selectedData'));
+
+// // const selected
+
+// localStorage.getItem('selectedData').forEach((obj, idx) => {
+//     const bodyRow = applicantTemplate.content.cloneNode(true).children[0];
+
+//     const bgColor = bodyRow.querySelector('[data-bg-color]');
+//     const bgImg = bodyRow.querySelector('[data-img]');
+//     const count = bodyRow.querySelector('[data-count]');
+//     const name = bodyRow.querySelector('[data-name]');
+//     const role = bodyRow.querySelector('[data-role]');
+//     const location = bodyRow.querySelector('[data-location]');
+
+//     if (obj.gender === 'm') {
+//         bgImg.src = '/../img/man.svg';
+//     } else {
+//         bgImg.src = '/../img/women.svg';
+//     }
+//     bgColor.style.backgroundColor = colorBox[idx % 6];
+//     count.textContent = `#${idx + 1}`;
+//     name.textContent = obj.name;
+//     role.textContent = obj.role;
+//     location.textContent = obj.location;
+
+//     applicantContainer.append(bodyRow);
+
+//     return {
+//         ...obj,
+//         element: bodyRow,
+//     }
+// });
