@@ -1,22 +1,69 @@
-* {
-    font-family: 'Poppins', sans-serif;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-body {
-    overflow-x: hidden;
-}
-
 .hide {
     display: none;
+}
+
+#nav-changer {
+    height: 150px;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.drop-down {
+    cursor: pointer;
+    padding: 0.8rem 1rem;
+    width: 10rem;
+    border: 1px solid #EBEBEB;
+    border-radius: 10px;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, .21);
+    outline: none;
+    font-size: 1rem;
+
+    &::placeholder {
+        color: #d1cdcd;
+        font-weight: 300;
+
+    }
+
+    &:focus {
+        box-shadow: 0 1px 5px 0 #777f83;
+        scale: 1.02;
+    }
+}
+
+.drop-down>option {
+    padding: 10px 20px;
+    cursor: grab;
+}
+
+.search {
+    padding: 0.8rem 1rem;
+    width: 30rem;
+    border: 1px solid #EBEBEB;
+    border-radius: 10px;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, .21);
+    outline: none;
+    font-weight: 500;
+    font-size: 1rem;
+
+    &::placeholder {
+        color: #d1cdcd;
+    }
+
+    &:focus {
+        box-shadow: 0 1px 5px 0 #777f83;
+        scale: 1.02;
+    }
 }
 
 .cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 3rem;
 }
 
 .card {

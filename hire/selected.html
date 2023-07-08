@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candidate Search</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../global.css">
+
+</head>
+
+<body>
+
+    <nav data-navbar>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="/hire/hire.html">Hire</a></li>
+            <li><a href="#" class="nav-active">Selected</a></li>
+        </ul>
+    </nav>
+
+    <div class="wrapper">
+        <div id="nav-changer"></div>
+        <!-- <div class="input-container">
+            <select class="drop-down" data-option>
+                <option value="role">By Role</option>
+                <option value="location">By Location</option>
+                <option value="name">By Name</option>
+            </select>
+            <input class="search" type="search" data-search placeholder="search.." />
+        </div> -->
+        <h2>Selected Candidates:</h2>
+        <div class="cards" data-selected-container></div>
+
+
+        <template data-selected-template>
+            <div class="card">
+                <div class="top" data-bg-color>
+                    <span class="count" data-count></span>
+                    <b class="role" data-role></b>
+                    <p class="name" data-name></p>
+                    <img class="gender-img" data-img src="../img/man.svg" alt="">
+                </div>
+                <div class="bottom">
+                    <p class="location" data-location></p>
+                    <p class="btn" onclick="addToShortList(this)">Short List</p>
+                </div>
+            </div>
+        </template>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Digital Recruitment Solution. All rights reserved.</p>
+
+        <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+        </ul>
+
+    </footer>
+
+
+    <script src="../scripts/index.js"></script>
+    <script src="../scripts/animation.js"></script>
+</body>
+
+</html>

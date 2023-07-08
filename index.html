@@ -5,96 +5,116 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Digital Recruitment Solution</title>
-    <link rel="stylesheet" type="text/css" href="/css/animation.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
-
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="global.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
 
 <body>
-    <nav>
+    <nav data-navbar>
         <ul>
-            <li><a href="#">Home</a></li>
+            <li><a href="/" class="nav-active">Home</a></li>
             <li><a href="#">About Us</a></li>
             <li><a href="#">Contact Us</a></li>
-            <li><a href="/candidateSearch/candidateSearch.html">Short Listing</a></li>
+            <li><a href="/hire/hire.html">Hire</a></li>
         </ul>
     </nav>
-    <section id="fornt-container">
 
-        <img class="bg-img" id="img-1" src="/img/1.png" alt="">
-        <img class="bg-img" id="img-2" src="/img/2.png" alt="">
-        <img class="bg-img" id="img-3" src="/img/3.png" alt="">
-        <img class="bg-img" id="img-4" src="/img/4.png" alt="">
-        <img class="bg-img" id="img-5" src="/img/5.png" alt="">
-        <img class="bg-img" id="img-6" src="/img/6.png" alt="">
+    <main>
+        <section id="fornt-container">
 
-        <div class="inside-fornt container">
-            <h1>
-                <span class="text">Digital </span>
-                <span class="text">Recruitment </span>
-                <span class="text">Solution</span>
-            </h1>
-            <p>An efficient and seamless hiring experience for MNCs</p>
-            <a href="#" class="cta-button">Get Started</a>
-            <div class="line"></div>
-        </div>
-    </section>
+            <img class="bg-img" id="img-1" src="/img/1.png" alt="">
+            <img class="bg-img" id="img-2" src="/img/2.png" alt="">
+            <img class="bg-img" id="img-3" src="/img/3.png" alt="">
+            <img class="bg-img" id="img-4" src="/img/4.png" alt="">
+            <img class="bg-img" id="img-5" src="/img/5.png" alt="">
+            <img class="bg-img" id="img-6" src="/img/6.png" alt="">
 
-    <div class="app-details">
-        <section id="features" class="app-detail fade-in">
-            <h2>Key Features</h2>
-            <ul>
-                <li>Advanced candidate search based on location and job roles</li>
-                <li>Streamlined hiring processes with automated workflows</li>
-                <li>Intuitive evaluation tools for ranking and assessing candidates</li>
-                <li>Collaboration features for HR professionals and hiring managers</li>
-                <li>Real-time communication and notifications</li>
-            </ul>
+            <div class="inside-fornt container">
+                <h1>
+                    <span class="text">Digital </span>
+                    <span class="text">Recruitment </span>
+                    <span class="text">Solution</span>
+                </h1>
+                <p>An efficient and seamless hiring experience for MNCs</p>
+                <a href="#" class="cta-button">Get Started</a>
+                <div class="line"></div>
+            </div>
         </section>
 
-        <section id="benefits" class="app-detail fade-in">
-            <h2>Benefits</h2>
-            <ul>
-                <li>Save time and effort in candidate sourcing and screening</li>
-                <li>Improve quality and relevance of candidate matches</li>
-                <li>Enhance collaboration between hiring managers and HR professionals</li>
-                <li>Reduce costs associated with traditional recruitment methods</li>
-                <li>Access the platform from anywhere, anytime</li>
-            </ul>
-        </section>
-    </div>
-    <section id="cta" class="fade-in">
-        <h2>Ready to revolutionize your hiring process?</h2>
-        <a href="#" class="cta-button">Sign up for a free trial</a>
-    </section>
+        <div class="site-details">
+            <section id="features" class="site-detail fade-in">
+                <h2>Key Features</h2>
+                <ul>
+                    <li>Advanced candidate search based on location and job roles</li>
+                    <li>Streamlined hiring processes with automated workflows</li>
+                    <li>Intuitive evaluation tools for ranking and assessing candidates</li>
+                    <li>Collaboration features for HR professionals and hiring managers</li>
+                    <li>Real-time communication and notifications</li>
+                </ul>
+            </section>
 
-    <section id="testimonials" class="fade-in">
-        <h2>Testimonials</h2>
-        <div class="testimonial">
-            <p>"The digital recruitment solution has transformed our hiring process. It's incredibly efficient and
-                user-friendly. Highly recommended!"</p>
-            <p>- John Doe, HR Manager</p>
+            <section id="benefits" class="site-detail fade-in">
+                <h2>Benefits</h2>
+                <ul>
+                    <li>Save time and effort in candidate sourcing and screening</li>
+                    <li>Improve quality and relevance of candidate matches</li>
+                    <li>Enhance collaboration between hiring managers and HR professionals</li>
+                    <li>Reduce costs associated with traditional recruitment methods</li>
+                    <li>Access the platform from anywhere, anytime</li>
+                </ul>
+            </section>
         </div>
-        <div class="testimonial">
-            <p>"We've seen a significant improvement in the quality of candidates we find using this app. It's a
-                game-changer!"</p>
-            <p>- Jane Smith, Hiring Manager</p>
+
+
+        <section id="cta">
+            <div class="inner-cta fade-in">
+                <h2>Ready to revolutionize your hiring process?</h2>
+                <a href="#" class="cta-button fade-in">Sign up for a free trial</a>
+            </div>
+        </section>
+
+        <div class="testimonials-box">
+            <h2 class="fade-in">Testimonials</h2>
+            <section id="testimonials" class="fade-in">
+                <div class="testimonial">
+                    <img class="avtar" src="/img/man.svg" alt="">
+                    <p>
+                        The digital recruitment solution has transformed our hiring process. It's incredibly efficient
+                        and
+                        user-friendly. Highly recommended!
+                    </p>
+                    <h2>Ayush Kumar</h2>
+                    <h4>Web Devloper</h4>
+                    <span class="material-symbols-outlined quote-icon">
+                        format_quote
+                    </span>
+                </div>
+                <div class="testimonial">
+                    <img class="avtar" src="/img/women.svg" alt="">
+                    <p>
+                        We've seen a significant improvement in the quality of candidates we find using this app. It's a
+                        game-changer!
+                    </p>
+                    <h2>Sushil Athithiyaa</h2>
+                    <h4>HR & OPS, StudyMonk</h4>
+                    <span class="material-symbols-outlined quote-icon">
+                        format_quote
+                    </span>
+                </div>
+            </section>
         </div>
-    </section>
+    </main>
 
     <footer>
         <p>&copy; 2023 Digital Recruitment Solution. All rights reserved.</p>
-        <nav>
-            <ul>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Terms of Service</a></li>
-            </ul>
-        </nav>
+
+        <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+        </ul>
+
     </footer>
     <script type="module" src="/scripts/index.js"></script>
     <script src="/scripts/animation.js"></script>
