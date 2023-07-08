@@ -21,9 +21,12 @@ p {
 
 body {
     margin: 0;
+    min-height: 100vh;
     font-family: 'Poppins', sans-serif;
     position: relative;
     overflow-x: hidden;
+    display: grid;
+    grid-template-rows: 1fr auto;
 }
 
 
@@ -190,18 +193,6 @@ footer ul li a {
     }
 }
 
-@keyframes article-load {
-    0% {
-        transform: translateY(-20px);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
 @keyframes slide-up {
     0% {
         opacity: 0;
@@ -271,7 +262,7 @@ footer ul li a {
     }
 
     100% {
-        width: 110%;
+        width: 60%;
         opacity: 1;
     }
 }

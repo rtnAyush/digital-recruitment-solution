@@ -75,10 +75,13 @@ const data = [
 
 // import data from "./data";
 
-const colorBox = ['#FFE1CB', '#D5F6ED', '#E2DBF9', '#E0F3FF', '#FBE2F3', '#EEF0F4']
+const colorBox = ['#FFE1CB', '#D5F6ED', '#E2DBF9', '#E0F3FF', '#FBE2F3', '#EEF0F4'];
+
 const applicantContainer = document.querySelector("[data-applicant-container]");
 const applicantTemplate = document.querySelector("[data-applicant-template]");
+
 const search = document.querySelector("[data-search]");
+const option = document.querySelector("[data-option]");
 
 
 const newData = data.map((obj, idx) => {
@@ -108,15 +111,30 @@ const newData = data.map((obj, idx) => {
         ...obj,
         element: bodyRow,
     }
+});
+
+let opt = 'role';
+
+option.addEventListener('change', e => {
+    opt = e.target.value;
 })
 
 search.addEventListener("input", (e) => {
     const val = e.target.value.toLowerCase();
 
     newData.forEach((obj, idx) => {
-        const isVisible = obj.location.toLowerCase().includes(val);
+        let isVisible;
+
+        if (opt === 'role') {
+            isVisible = obj.role.toLowerCase().includes(val);
+        } else if (opt === 'location') {
+            isVisible = obj.location.toLowerCase().includes(val);
+        } else {
+            isVisible = obj.name.toLowerCase().includes(val);
+        }
 
         obj.element.classList.toggle("hide", !isVisible);
+
     })
 })
 

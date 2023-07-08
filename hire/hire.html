@@ -25,15 +25,15 @@
     <div class="wrapper">
         <div id="nav-changer"></div>
         <div class="input-container">
-            <select class="drop-down">
-                <option value="">By Role</option>
-                <option value="">By Location</option>
-                <option value="">By Name</option>
+            <select class="drop-down" data-option>
+                <option value="role">By Role</option>
+                <option value="location">By Location</option>
+                <option value="name">By Name</option>
             </select>
             <input class="search" type="search" data-search placeholder="search.." />
         </div>
 
-        <div class="cards" data-applicant-container />
+        <div class="cards" data-applicant-container></div>
 
 
         <template data-applicant-template>
@@ -50,8 +50,9 @@
                 </div>
             </div>
         </template>
-        </table>
+
     </div>
+
     <footer>
         <p>&copy; 2023 Digital Recruitment Solution. All rights reserved.</p>
 
@@ -61,6 +62,8 @@
         </ul>
 
     </footer>
+
+
     <script src="../scripts/index.js"></script>
     <script src="../scripts/animation.js"></script>
 </body>
