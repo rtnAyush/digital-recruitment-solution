@@ -1,0 +1,119 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.hide {
+    display: none;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    margin: 20px;
+    width: 18rem;
+    height: 22rem;
+    border: 2px solid #F9F9F9;
+    border-radius: 10px;
+    padding: 14px;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, .21);
+    transition: box-shadow .3s ease-in-out;
+    position: relative;
+
+    &:hover {
+        box-shadow: 0 1px 5px 0 #777f83;
+        scale: 1.008;
+    }
+}
+
+.card>.top {
+    position: relative;
+    border-radius: 10px;
+    height: 80%;
+    box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, .21);
+    background-color: #e1dbf1;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    /* filter: blur(1px); */
+}
+
+.card>.top>.gender-img {
+    position: absolute;
+    width: 80%;
+    opacity: 0.6;
+    object-fit: contain;
+    bottom: -1px;
+    right: -43px;
+    filter: blur(1px);
+}
+
+.card>.top>.role {
+    z-index: 4;
+    width: 60%;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.card>.top>.name {
+    position: absolute;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 500;
+    bottom: 0;
+    right: -20%;
+    text-align: center;
+    z-index: 1;
+}
+
+.card>.top>.count {
+    position: absolute;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 500;
+    top: 5px;
+    left: -40%;
+    text-align: center;
+    z-index: 1;
+}
+
+.card>.bottom {
+    height: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card>.bottom>.location {
+    font-weight: 300;
+    color: #95939a;
+}
+
+.card>.bottom>.btn {
+    --bg-color: black;
+    --color: white;
+    cursor: pointer;
+    border: 1px solid var(--color);
+    background-color: var(--bg-color);
+    color: var(--color);
+    border-radius: 10px;
+    padding: 10px;
+    transition: all 0.1s ease;
+
+    &:hover {
+        border: 1px solid var(--bg-color);
+        background-color: var(--color);
+        color: var(--bg-color);
+        scale: 1.01;
+    }
+}
