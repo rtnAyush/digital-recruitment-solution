@@ -5,7 +5,8 @@
     /* flex-direction: column;
     align-items: center;
     justify-content: center; */
-    background: #F1F6F9;
+    /* background: #F1F6F9; */
+    background: #E2DBF9;
 }
 
 .inside-fornt {
@@ -152,6 +153,89 @@ h2 {
     display: none;
 }
 
+/* Site Details */
+
+.site-details {
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 85px);
+    gap: 1rem;
+}
+
+.site-details>.site-detail {
+    flex: 1;
+    font-weight: 300;
+    width: 400px;
+    border-radius: 15px;
+    padding: 2rem 3rem 4rem;
+    margin: 5px;
+    position: relative;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 10px 20px 25px rgba(0, 0, 0, 0.2);
+    color: #333;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+
+    &:hover {
+        box-shadow: 10px 20px 25px rgba(0, 0, 0, 0.2);
+        transform: scale(1.05);
+        color: #333;
+        background: #fff;
+        z-index: 100;
+    }
+}
+
+.site-detail>ul>li {
+    padding: 0.2rem;
+    font-weight: 300;
+}
+
+.site-detail>h2 {
+    font-weight: 500;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    text-align: left;
+}
+
+@media(width<768px) {
+    .site-details {
+        width: 100%;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .site-detail {
+        margin: 40px 0;
+    }
+}
+
+/* cta */
+
+#cta {
+    height: calc(100vh - 85px);
+    /* border: 2px solid red; */
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+#cta>.inner-cta {
+    width: 70%;
+    margin: auto;
+}
+
+.inner-cta>h2 {
+    text-align: left;
+    margin-bottom: 8rem;
+    font-weight: 600;
+    font-size: 3rem;
+    opacity: 0;
+    transform: translateY(50%);
+    animation: slide-up 1.95s 5s cubic-bezier(.2, 1, .3, 1) forwards;
+}
+
 /* Testimonial styles */
 
 .testimonials-box {
@@ -187,9 +271,10 @@ h2 {
     box-shadow: 10px 20px 25px rgba(0, 0, 0, 0.2);
     color: #fff;
     cursor: pointer;
+    transition: all 0.4s ease;
 
     &:hover {
-        transform: scale(1.2);
+        transform: scale(1.1);
         color: #333;
         background: #fff;
         z-index: 100;
@@ -246,16 +331,4 @@ h2 {
     .testimonial {
         margin: 40px 0;
     }
-}
-
-/* Footer styles */
-footer {
-    background-color: #f4f4f4;
-    padding: 10px;
-    text-align: center;
-}
-
-footer nav ul li {
-    display: inline;
-    margin-right: 10px;
 }

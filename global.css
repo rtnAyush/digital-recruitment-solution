@@ -53,6 +53,11 @@ nav {
     width: 100%;
 }
 
+.nav-bar-light {
+    --bg-color: #fff;
+    --color: #473BE8;
+    --hover-color: #FFFFFF44;
+}
 
 nav ul {
     display: flex;
@@ -97,6 +102,20 @@ nav li:hover {
     background-color: var(--hover-color);
 }
 
+
+/* Footer styles */
+footer {
+    background-color: #f4f4f4;
+    padding: 10px;
+    text-align: center;
+}
+
+footer nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+/*  */
 .fade-in {
     opacity: 0;
     transition: opacity 250ms ease-in;

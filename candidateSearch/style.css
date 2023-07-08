@@ -1,9 +1,9 @@
-.wrapper {
-    padding-top: 150px;
-}
-
 .hide {
     display: none;
+}
+
+#nav-changer {
+    height: 150px;
 }
 
 .input-container {
@@ -63,6 +63,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 3rem;
 }
 
 .card {
