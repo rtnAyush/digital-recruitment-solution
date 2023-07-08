@@ -105,14 +105,24 @@ nav li:hover {
 
 /* Footer styles */
 footer {
+    padding: 5rem 0;
     background-color: #f4f4f4;
-    padding: 10px;
+    /* padding: 10px; */
     text-align: center;
 }
 
-footer nav ul li {
+footer ul li {
+    list-style: none;
     display: inline;
     margin-right: 10px;
+    color: #473BE8;
+}
+
+footer ul li a {
+    text-decoration: none;
+    display: inline;
+    margin-right: 10px;
+    color: #473BE8;
 }
 
 /*  */
