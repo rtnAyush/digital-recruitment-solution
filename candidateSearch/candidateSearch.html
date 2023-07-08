@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candidate Search</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <input type="search" data-search />
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Job</th>
+                    <th>Location</th>
+                </tr>
+            </thead>
+            <tbody data-user-container>
+
+            </tbody>
+
+            <template data-user-template>
+                <tr>
+                    <td data-count></td>
+                    <td data-name></td>
+                    <td data-role></td>
+                    <td data-location></td>
+                </tr>
+            </template>
+        </table>
+    </div>
+    <script src="../scripts/index.js"></script>
+    <script src="../scripts/animation.js"></script>
+</body>
+
+</html>
