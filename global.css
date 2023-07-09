@@ -56,6 +56,12 @@ nav {
     width: 100%;
 }
 
+/* @media screen and (width<=768px) {
+    nav {
+        width: initial;
+    }
+} */
+
 .nav-bar-light {
     --bg-color: #fff;
     --color: #473BE8;
@@ -262,7 +268,7 @@ footer ul li a {
     }
 
     100% {
-        width: 60%;
+        /* width: 60%; */
         opacity: 1;
     }
 }
