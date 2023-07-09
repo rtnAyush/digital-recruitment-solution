@@ -15,10 +15,17 @@
     width: 70%;
 }
 
+@media screen and (width<=768px) {
+    .inside-fornt {
+        width: 100%;
+    }
+}
+
 .inside-fornt>h1 {
     text-align: start;
     word-wrap: break-word;
     display: grid;
+    margin: auto;
 }
 
 .inside-fornt>p {
@@ -62,6 +69,7 @@
 #fornt-container>.bg-img {
     position: absolute;
     width: 55%;
+    background: none;
     /* z-index: 0; */
     transform-origin: 0;
     opacity: 0;
@@ -259,7 +267,6 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1200px;
     margin: 0 auto;
     gap: 1rem;
 }

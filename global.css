@@ -20,15 +20,11 @@ p {
 }
 
 body {
-    margin: 0;
-    min-height: 100vh;
     font-family: 'Poppins', sans-serif;
-    position: relative;
-    overflow-x: hidden;
-    display: grid;
-    grid-template-rows: 1fr auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
-
 
 .container {
     max-width: 1320px;
@@ -56,12 +52,6 @@ nav {
     width: 100%;
 }
 
-/* @media screen and (width<=768px) {
-    nav {
-        width: initial;
-    }
-} */
-
 .nav-bar-light {
     --bg-color: #fff;
     --color: #473BE8;
@@ -71,6 +61,8 @@ nav {
 nav ul {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+
     list-style-type: none;
 }
 
@@ -111,6 +103,9 @@ nav li:hover {
     background-color: var(--hover-color);
 }
 
+main {
+    flex: 1;
+}
 
 /* Footer styles */
 footer {
