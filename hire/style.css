@@ -9,8 +9,10 @@
 .input-container {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 1rem;
 }
+
 
 .drop-down {
     cursor: pointer;
@@ -59,12 +61,20 @@
     }
 }
 
+@media screen and (width<=768px) {
+    .search {
+        width: 80%;
+    }
+}
+
 .cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 3rem;
+    margin: auto;
 }
+
 
 .card {
     margin: 20px;
